@@ -16,7 +16,7 @@ npm run build
 npm run preview
 ```
 
-The generated `dist/` directory is suitable for static hosting. This workspace has not been deployed.
+The generated `dist/` directory is suitable for static hosting. The site is deployed on Vercel, which rebuilds it automatically from the `main` branch of [suvscd-io/pwa](https://github.com/suvscd-io/pwa).
 
 ## Content and design
 

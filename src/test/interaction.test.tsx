@@ -232,3 +232,14 @@ describe("copy email feedback", () => {
     expect(screen.getByText("suvscd@gmail.com").textContent).toBe("suvscd@gmail.com");
   });
 });
+
+describe("contact links", () => {
+  it("links to the GitHub profile in a new tab alongside the other contacts", () => {
+    render(<App />);
+    const github = screen.getByRole("link", { name: "GitHub" });
+    expect(github.getAttribute("href")).toBe("https://github.com/suvscd-io");
+    expect(github.getAttribute("target")).toBe("_blank");
+    expect(github.getAttribute("rel")).toBe("noopener noreferrer");
+    expect(github.closest(".social-links")).not.toBeNull();
+  });
+});

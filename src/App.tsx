@@ -8,6 +8,7 @@ import {
   Copy,
   Check,
   Instagram,
+  Github,
   Orbit,
   Code2,
   ShieldCheck,
@@ -475,6 +476,15 @@ export default function App() {
               >
                 <XIcon />
                 Find me on X<ArrowUpRight size={14} />
+              </a>
+              <a
+                href="https://github.com/suvscd-io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github size={18} />
+                GitHub
+                <ArrowUpRight size={14} />
               </a>
               <a href="mailto:suvscd@gmail.com">
                 <Mail size={18} />

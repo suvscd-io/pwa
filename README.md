@@ -28,7 +28,7 @@ The generated `dist/` directory is suitable for static hosting. This workspace h
 - Current image-generation prompts and asset details: `docs/sky-assets.md`
 - Current design: `docs/superpowers/specs/2026-10-23-sky-world-design.md`
 
-Motion respects the operating system's reduced-motion preference. The floating pause button was removed at the user's request. Contact links are Instagram and X (`suvscd`) and email (`suvscd@gmail.com`).
+Motion respects the operating system's reduced-motion preference. The floating pause button was removed at the user's request. Contact links are Instagram and X (`suvscd`), GitHub (`suvscd-io`), and email (`suvscd@gmail.com`).
 
 The floating island is 1536 × 1024, with a 960 × 640 mobile version; the cloud WebP is 1600 × 533. Both preserve transparency. The earlier landscape used in the footer is 1672 × 941. These assets are not native 8K; typography and SVG illustrations scale independently. Original new sources and inspection images are retained in `assets/source/` and excluded from Vercel uploads.
 

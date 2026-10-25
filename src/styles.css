@@ -1777,7 +1777,10 @@ h3 {
     height: 365px;
   }
   .social-links {
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    gap: 0 28px;
   }
 }
 @media (max-width: 359px) {
@@ -1834,7 +1837,7 @@ h3 {
     font-size: 24px;
   }
   .social-links {
-    gap: 15px;
+    gap: 0 20px;
   }
   .social-links a {
     font-size: 13px;

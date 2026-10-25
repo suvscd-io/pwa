@@ -1,0 +1,73 @@
+.flight-scene {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 4;
+  overflow: hidden;
+  contain: layout style;
+}
+
+.flight-anchor {
+  position: absolute;
+  left: 96%;
+  top: 36%;
+  width: clamp(100px, 9.5vw, 166px);
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+
+.flight-pointer,
+.flight-bank {
+  position: relative;
+}
+.flight-bank {
+  transform-origin: 62% 47%;
+}
+.flight-paper {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  filter: drop-shadow(0 7px 5px #35637024) drop-shadow(0 1px 0 #5d88952b);
+}
+
+.flight-trail {
+  position: absolute;
+  right: 64%;
+  top: 11%;
+  width: 225%;
+  height: auto;
+  opacity: 0.7;
+  transform: rotate(-8deg);
+  transform-origin: right center;
+}
+
+.flight-paused .flight-anchor {
+  will-change: auto;
+}
+.flight-paused .flight-trail {
+  opacity: 0.35;
+}
+
+@media (max-width: 799px) {
+  .flight-scene {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .flight-anchor {
+    width: 88px;
+  }
+  .flight-paper {
+    opacity: 0.85;
+  }
+  .flight-trail {
+    width: 115%;
+    opacity: 0.22;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flight-scene {
+    display: none;
+  }
+}

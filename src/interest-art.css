@@ -1,0 +1,208 @@
+.interest-art {
+  position: relative;
+  height: 245px;
+  max-width: 400px;
+  margin: 0 auto;
+  perspective: 900px;
+  isolation: isolate;
+}
+.glass-orb {
+  position: absolute;
+  left: calc(50% - 69.5px);
+  top: calc(45% - 69.5px);
+  height: 139px;
+  width: 139px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 28% 24%,
+    #ffffffdb,
+    #f3f4ff90 25%,
+    #a5ade04d 50%,
+    #8492ca8c 71%,
+    #fafaffd9 96%
+  );
+  box-shadow:
+    inset 4px 6px 14px #fff8,
+    inset -10px -13px 23px #8390bf55,
+    0 21px 30px #5b64aa1f;
+  border: 1px solid #ffffffb0;
+  color: #fcfcff;
+  transform: rotate(-14deg);
+  animation: orbHover 6s ease-in-out infinite alternate;
+}
+.glass-orb svg {
+  filter: drop-shadow(0 3px 1px #7984b76b);
+}
+.art-orbit {
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  width: 264px;
+  height: 119px;
+  border: 1px solid #ffffffa6;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(-24deg);
+  z-index: -1;
+}
+.orbit-two {
+  width: 220px;
+  height: 160px;
+  transform: translate(-50%, -50%) rotate(46deg);
+  border-color: #ffffff69;
+}
+.satellite {
+  position: absolute;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  padding: 8px 13px;
+  border-radius: 20px;
+  background: #fff9;
+  box-shadow: 0 4px 10px #58628c0a;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  transform: rotate(var(--float-angle, 0deg));
+  animation: noteFloat 8s ease-in-out infinite alternate;
+}
+.satellite-one {
+  top: 30%;
+  left: 3%;
+  --float-angle: -12deg;
+}
+.satellite-two {
+  top: 67%;
+  right: 2%;
+  --float-angle: 10deg;
+  animation-delay: -3s;
+}
+.tiny-orb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  right: 17%;
+  top: 22%;
+  background: radial-gradient(circle at 27% 23%, #fff, #c4b3ee 60%, #8b80bb);
+  box-shadow: 0 5px 9px #515b7522;
+}
+.art-floor {
+  position: absolute;
+  width: 145px;
+  height: 18px;
+  bottom: 27px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #67738b1c;
+  filter: blur(9px);
+  border-radius: 50%;
+  z-index: -2;
+}
+.mini-window {
+  width: 168px;
+  height: 141px;
+  position: absolute;
+  left: calc(50% - 84px);
+  top: calc(46% - 70.5px);
+  background: linear-gradient(135deg, #fff, #c5d9e8);
+  box-shadow:
+    9px 14px 22px #395a6e22,
+    inset 0 0 0 1px #fff;
+  transform: rotate(-8deg) rotateY(-15deg);
+  --art-depth: -15deg;
+  border-radius: 14px;
+  padding: 13px;
+  color: #6d94a8;
+  animation: orbHover 6s ease-in-out infinite alternate;
+}
+.window-dots {
+  display: flex;
+  gap: 4px;
+}
+.window-dots i {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #a0bac6;
+}
+.mini-window > svg {
+  position: absolute;
+  left: 40px;
+  top: 34px;
+}
+.code-line {
+  position: absolute;
+  height: 4px;
+  width: 66px;
+  background: #9db4c340;
+  bottom: 17px;
+  left: 19px;
+  border-radius: 4px;
+}
+.code-line.short {
+  width: 30px;
+  left: 94px;
+}
+.floating-symbol {
+  position: absolute;
+  right: 11%;
+  top: 20%;
+  background: #ffffffb8;
+  border: 1px solid white;
+  padding: 12px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  color: #6f8c8d;
+  --float-angle: 12deg;
+  transform: rotate(var(--float-angle));
+  box-shadow: 0 5px 15px #58707510;
+  animation: noteFloat 8s ease-in-out infinite alternate;
+}
+.shield-sculpture,
+.repair-sculpture {
+  position: absolute;
+  left: calc(50% - 72px);
+  top: calc(47% - 78px);
+  width: 144px;
+  height: 156px;
+  display: grid;
+  place-items: center;
+  color: #f6fff0;
+  filter: drop-shadow(5px 12px 2px #829e6c2b) drop-shadow(-1px -2px 1px white);
+  background: linear-gradient(135deg, #cce0b6, #87a973);
+  clip-path: polygon(
+    50% 0,
+    95% 17%,
+    91% 66%,
+    74% 88%,
+    50% 100%,
+    26% 88%,
+    9% 66%,
+    5% 17%
+  );
+  transform: rotate(-9deg);
+  animation: orbHover 6s ease-in-out infinite alternate;
+}
+.security-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 20% 20%, #fff, #8eaf7d);
+  position: absolute;
+  top: 32%;
+  right: 15%;
+}
+.dot-b {
+  top: 70%;
+  left: 10%;
+  width: 9px;
+  height: 9px;
+}
+.repair-sculpture {
+  clip-path: none;
+  background: none;
+  color: #b3a7cd;
+  filter: drop-shadow(3px 6px 0 #887d9c) drop-shadow(-1px -2px 0 white);
+  transform: rotate(-15deg);
+}

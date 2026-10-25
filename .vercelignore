@@ -1,0 +1,12 @@
+node_modules
+dist
+docs
+scripts
+assets
+src/test
+**/*.test.ts
+**/*.test.tsx
+vitest.config.ts
+*.log
+public/images/*.png
+.env*
